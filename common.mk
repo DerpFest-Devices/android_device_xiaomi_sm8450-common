@@ -279,7 +279,8 @@ PRODUCT_PACKAGES += \
     SettingsResXiaomi \
     WifiResTarget \
     WifiResTarget_cape \
-    WifiResTarget_spf
+    WifiResTarget_spf \
+    XiaomiTaroUsbOverlay
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -379,6 +380,9 @@ PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
 # USB
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.usb.uvc.enabled=true
+
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service-qti \
     android.hardware.usb.gadget@1.2-service-qti
