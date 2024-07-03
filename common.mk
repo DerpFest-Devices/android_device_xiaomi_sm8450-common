@@ -332,6 +332,11 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
 
+# Sound Dose
+PRODUCT_PACKAGES += \
+    android.hardware.audio.sounddose-vendor-impl \
+    audio_sounddose_aoc
+
 # Telephony
 PRODUCT_PACKAGES += \
     extphonelib \
