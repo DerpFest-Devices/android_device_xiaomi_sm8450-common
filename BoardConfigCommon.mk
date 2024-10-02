@@ -106,6 +106,7 @@ TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/waipio_GKI.config \
     vendor/xiaomi_GKI.config \
+    vendor/nekko.config \
     vendor/$(PRODUCT_DEVICE)_GKI.config \
     vendor/debugfs.config
 
